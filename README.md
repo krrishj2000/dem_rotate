@@ -1,4 +1,4 @@
-dem_rotate(input_geotiff,temporary_geotiff , output_geotiff, rotation_angle)
+dem_rotate(input_geotiff, output_geotiff, rotation_angle)
 
 
 **Credits**: https://gis.stackexchange.com/questions/131465/gdal-rotate-dem
