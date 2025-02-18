@@ -5,9 +5,8 @@ from rasterio.transform import rowcol
 
 input_file='/home/krish/Documents/GLOF/Nare/gp_elev_4326.tif'
 output_file='/home/krish/Documents/GLOF/Nare/gp_elev_rot.tif'
-temp_file='/home/krish/Documents/GLOF/Nare/gp_elev_temp.tif'
 
-def dem_rotate(input_file='/home/krish/Documents/GLOF/Nare/gp_elev_4326.tif',output_file='/home/krish/Documents/GLOF/Nare/gp_elev_rot.tif',temp_file='/home/krish/Documents/GLOF/Nare/gp_elev_temp.tif',rotation_degrees=90):
+def dem_rotate(input_file,output_file,temp_file="temp.tif",rotation_degrees=90):
     raster=rs.open(input_file)
 
     width = raster.width 
@@ -24,4 +23,6 @@ def dem_rotate(input_file='/home/krish/Documents/GLOF/Nare/gp_elev_4326.tif',out
     os.system(command=command1)
     os.system(command=command2)
 
+
+# modify as per your need below
 dem_rotate(input_file='/home/krish/Documents/GLOF/Nare/gp_elev_4326.tif',output_file='/home/krish/Documents/GLOF/Nare/gp_elev_rot.tif',temp_file='/home/krish/Documents/GLOF/Nare/gp_elev_temp.tif',rotation_degrees=-15)
